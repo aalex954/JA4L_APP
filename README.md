@@ -39,6 +39,8 @@ ja4l_fingerprint = f"Version: {ja4l_a}, Random: {raw_data[11:43].hex()}"
   - ```ja4lapp/Scripts/activate```
 - Install requirements
   - ```pip install -r requirements.txt```
+- Generate Certs
+  - ```openssl req -x509 -newkey rsa:4096 -keyout key.pem -out cert.pem -days 365 -nodes```
 - Start the main app
   - ```python app.py```
 - Run the packet snipper application as ```admin``` or with ```sudo```
