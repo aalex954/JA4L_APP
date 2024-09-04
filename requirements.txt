@@ -1,1 +1,6 @@
+Flask
+Flask-Bootstrap
+Flask-WTF
+Flask-Talisman
 scapy
+Werkzeug
