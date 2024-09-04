@@ -1,7 +1,6 @@
 # JA4L_APP
 A PoC JA4L application that attempts to estimate distance from the server using TTL and JA4 data. 
 
-
 ## Breakdown of a JA4L Fingerprint
 - Version (ja4l_a): This is extracted from bytes 9 to 11 of the raw TLS data. It represents the TLS version used in the handshake.
 - Random Field: The next 32 bytes (bytes 11 to 43) represent the random data used in the handshake.
@@ -31,6 +30,21 @@ The random field is captured and formatted as follows:
 ```python
 ja4l_fingerprint = f"Version: {ja4l_a}, Random: {raw_data[11:43].hex()}"
 ```
+
+## Usage
+
+- Create venv
+  - ```python -m env ja4lapp```
+- Activate venv
+  - ```ja4lapp/Scripts/activate```
+- Install requirements
+  - ```pip install -r requirements.txt```
+- Start the main app
+  - ```python app.py```
+- Run the packet snipper application as ```admin``` or with ```sudo```
+  - ```python packet_sniffer.py```
+- Access the main application
+  - ```https://0.0.0.0:5000```
 
 ## Screenshots
 
