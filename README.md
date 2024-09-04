@@ -31,3 +31,7 @@ The random field is captured and formatted as follows:
 ```python
 ja4l_fingerprint = f"Version: {ja4l_a}, Random: {raw_data[11:43].hex()}"
 ```
+
+## Screenshots
+
+![image](https://github.com/user-attachments/assets/ebac1224-24cc-4b08-b91f-c99a8107ffcc)
