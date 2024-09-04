@@ -1,0 +1,4 @@
+streamlit==1.25.0  # Adjust version based on your installed version or latest compatible version
+scapy==2.5.0       # Ensure compatibility with the latest scapy version
+pandas==2.1.1      # For handling DataFrames and SQL queries
+sqlite3            # Built-in with Python, no need to specify version
